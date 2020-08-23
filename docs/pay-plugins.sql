@@ -45,9 +45,9 @@ CREATE TABLE `tb_payment_plugin` (
 -- ----------------------------
 -- Records of tb_payment_plugin
 -- ----------------------------
-INSERT INTO `tb_payment_plugin` VALUES ('1', 'system', '2020-07-28 14:35:50', 'system', '2020-07-28 14:35:52', '1', 'aliAppPayPlugin', '');
-INSERT INTO `tb_payment_plugin` VALUES ('2', 'system', '2020-07-28 14:37:47', 'system', '2020-07-28 14:37:49', '2', 'wxAppPayPlugin', '');
-INSERT INTO `tb_payment_plugin` VALUES ('3', 'system', '2020-07-28 14:37:47', 'system', '2020-07-28 14:37:49', '3', 'wxMaPayPlugin', '');
+INSERT INTO `tb_payment_plugin` VALUES ('1', 'system', '2020-07-28 14:35:50', 'system', '2020-07-28 14:35:52', '1', 'aliAppPayPlugin', '1');
+INSERT INTO `tb_payment_plugin` VALUES ('2', 'system', '2020-07-28 14:37:47', 'system', '2020-07-28 14:37:49', '2', 'wxAppPayPlugin', '1');
+INSERT INTO `tb_payment_plugin` VALUES ('3', 'system', '2020-07-28 14:37:47', 'system', '2020-07-28 14:37:49', '3', 'wxMaPayPlugin', '0');
 
 -- ----------------------------
 -- Table structure for `tb_payment_plugin_attribute`
@@ -64,16 +64,16 @@ CREATE TABLE `tb_payment_plugin_attribute` (
 -- ----------------------------
 -- Records of tb_payment_plugin_attribute
 -- ----------------------------
-INSERT INTO `tb_payment_plugin_attribute` VALUES ('1', 'app_id', '88888888');
+INSERT INTO `tb_payment_plugin_attribute` VALUES ('1', 'app_id', '支付宝appid');
 INSERT INTO `tb_payment_plugin_attribute` VALUES ('1', 'description', 'APP支付宝支付');
 INSERT INTO `tb_payment_plugin_attribute` VALUES ('1', 'logo', 'http://xfbetterdb.oss-cn-hangzhou.aliyuncs.com/2f397ecc19de1bacbc6a6f5414d3a3a8.jpg');
 INSERT INTO `tb_payment_plugin_attribute` VALUES ('1', 'paymentName', '支付宝');
 INSERT INTO `tb_payment_plugin_attribute` VALUES ('1', 'private_key', '应用私钥');
 INSERT INTO `tb_payment_plugin_attribute` VALUES ('1', 'public_key', '支付宝公钥');
-INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'appid', 'wx88888888');
+INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'appid', '微信应用appid');
 INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'description', 'APP微信支付');
-INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'keyPath', '/data/project/piano/apiclient_cert.p12');
+INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'keyPath', '微信退款需要用到的证书服务器存放位置，例如：/data/project/apiclient_cert.p12');
 INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'logo', 'http://xfbetterdb.oss-cn-hangzhou.aliyuncs.com/eaab699800353b5dfa78d23c9b7a497f.png');
-INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'mchId', 'mchId');
-INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'mchkey', 'mchkey');
+INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'mchId', '微信支付商户id');
+INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'mchkey', '微信支付商户密钥');
 INSERT INTO `tb_payment_plugin_attribute` VALUES ('2', 'paymentName', '微信支付');
