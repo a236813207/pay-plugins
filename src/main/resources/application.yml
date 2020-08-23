@@ -1,0 +1,31 @@
+############################# 访问路径、端口tomcat start #############################
+server:
+  port: 8888
+  servlet:
+    context-path: /
+  tomcat:
+    max-threads: 1000
+    min-spare-threads: 30
+    uri-encoding: UTF-8
+############################# 访问路径、端口tomcat end ###############################
+################################ spring config start ###############################
+spring:
+  profiles:
+    active: dev
+  application:
+    name: pay-plugins
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  banner:
+    charset: UTF-8
+    location: classpath:config/banner.txt
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+# logback.xml中有详细的日志配置
+logging:
+  config: classpath:config/logback.xml
+################################ spring config end #################################
